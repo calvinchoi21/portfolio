@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Clustering on Calvin Choi</title><link>https://calvinchoi21.github.io/portfolio/tags/clustering/</link><description>Recent content in Clustering on Calvin Choi</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 05 May 2024 20:30:47 +0000</lastBuildDate><atom:link href="https://calvinchoi21.github.io/portfolio/tags/clustering/index.xml" rel="self" type="application/rss+xml"/><item><title>Clustering Crime Patterns in Toronto</title><link>https://calvinchoi21.github.io/portfolio/p/clustering-crime-patterns-in-toronto/</link><pubDate>Sun, 05 May 2024 20:30:47 +0000</pubDate><guid>https://calvinchoi21.github.io/portfolio/p/clustering-crime-patterns-in-toronto/</guid><description>&lt;img src="https://calvinchoi21.github.io/portfolio/p/clustering-crime-patterns-in-toronto/crime_clusters.png" alt="Featured image of post Clustering Crime Patterns in Toronto" />&lt;h3 id="introduction">Introduction
+&lt;/h3>&lt;p>The aim of this project is to combine crime data obtained from the Toronto Police Service (TPS) with Toronto based climate data from the Government of Canada to uncover patterns in criminal activity in the city as it relates to climate. Cluster analysis is employed to group the data such that objects in the same cluster share more similar properties than objects in other clusters.&lt;/p>
+&lt;ul>
+&lt;li>Each record in the preprocessed dataset represents a unique occurrence, including details of the crime committed and temperature/climate on the day of the occurrence.&lt;/li>
+&lt;li>Substantial data cleansing and preprocessing was required to transform the raw data into a format suitable for clustering analysis.&lt;/li>
+&lt;li>The k-prototypes algorithm from the kmodes package is used to handle the mix of categorical and numerical features in the preprocessed dataset.&lt;/li>
+&lt;li>The more popular k-means algorithm is also employed after some additional preprocessing, however the more versatile k-protoypes algorithm yielded more insightful information due to its ability to handle catagorical data.&lt;/li>
+&lt;li>The k-prototypes algorithm was able to locate 5 meaningful clusters. Each record was then assigned to one of these clusters.&lt;/li>
+&lt;li>Data visualization and the aggregation of records by cluster was used to understand the charateristics of each cluster.&lt;/li>
+&lt;li>Code: &lt;a class="link" href="https://github.com/calvinchoi21/toronto-crime-clustering/blob/master/Toronto_Crime.ipynb" target="_blank" rel="noopener"
+>Link&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="contents">Contents
+&lt;/h3>&lt;ol>
+&lt;li>Data Preparation and Cleaning&lt;/li>
+&lt;li>Data Exploration&lt;/li>
+&lt;li>Application of K-Means Algorithm&lt;/li>
+&lt;li>Application of K-Prototypes Algorithm&lt;/li>
+&lt;/ol>
+&lt;h3 id="the-data">The Data
+&lt;/h3>&lt;p>The final prepared dataset contains 15 features. Each record represents a specific occurrence.&lt;/p>
+&lt;ul>
+&lt;li>event_unique_id - ID used to identify each occurrence&lt;/li>
+&lt;li>offence - Name of offence committed&lt;/li>
+&lt;li>occurrenceyear - Year of occurrence&lt;/li>
+&lt;li>occurrencemonth - Month of occurrence&lt;/li>
+&lt;li>occurrenceday - Day of month of occurrence&lt;/li>
+&lt;li>occurrencedayofweek - Day of week of occurrrence&lt;/li>
+&lt;li>occurrencehour - Hour of day of occurrrence&lt;/li>
+&lt;li>MCI - Crime category of offence&lt;/li>
+&lt;li>Neighbourhood - Name of Toronto neighbourhood&lt;/li>
+&lt;li>Date/Time - Data and time of occurrence&lt;/li>
+&lt;li>mean_temp - Mean temperature on the day of occurrence&lt;/li>
+&lt;li>total_rain - Total rain in CM on the day of occurrence&lt;/li>
+&lt;li>total_snow - Total snow in CM on the day of occurrence&lt;/li>
+&lt;li>total_precip - Total precipitation on the day of occurrence&lt;/li>
+&lt;li>snow_on_ground - Total snow on ground on the day of occurrence&lt;/li>
+&lt;/ul>
+&lt;p>The first ten features were obtained from the TPS &lt;a href="http://data.torontopolice.on.ca/pages/catalogue">Public Safety Data Portal&lt;/a>. The last five features were obtained from the &lt;a href="https://climate.weather.gc.ca/historical_data/search_historic_data_e.html#">Environment and Natural Resources&lt;/a> section of the Government of Canada website.&lt;/p></description></item></channel></rss>
