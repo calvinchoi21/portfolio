@@ -8,6 +8,8 @@ license:
 hidden: false
 comments: true
 draft: false
+categories:
+    - Clustering
 tags: ["clustering","k-means","python"]
 ---
 
